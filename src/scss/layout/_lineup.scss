@@ -1,0 +1,100 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.lineup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$vino;
+    padding: 3rem;
+    h3{
+        font-size: 6rem;
+        color: v.$font;
+    }
+    .dia{
+        font-size: 2.8rem;
+        color: #FF9800;
+    }
+    .escenarios-contenedor{
+        .escenario{
+            .nombre-escenario{
+                text-align: center;
+                border-bottom: 1px solid;
+                width: 100%;
+                font-size: 2.5rem;
+                color: v.$amarillo;
+                font-weight: bold;
+            }
+            .calendario{
+                @include m.liDecoration;
+                font-size: 2.5rem;
+                line-height: 5rem;
+                width: 100%;
+                font-family: v.$fuente_principal;
+                color: v.$font;
+                font-weight: 600;
+            }
+            .calendario li{
+                padding-left: 1rem;
+            }
+            .calendario span{
+                font-weight: 400;
+            }
+            
+        }
+        .bg-rock{
+            background-color: v.$banner2;
+
+            li:nth-child(odd){
+                background-color: darken($color: v.$banner2, $amount: 5%);
+            }
+        }
+        .bg-edm{
+            background-color: v.$banner1;
+            li:nth-child(odd){
+                background-color: darken($color: v.$banner1, $amount: 5);
+            }
+        }
+    }
+}
+@include m.desktop{
+    .escenario{
+        width: 40rem;
+        height: 50rem;
+        border-radius: 1rem;
+    }
+}
+@include m.tablet{
+    .escenarios-contenedor{
+        gap: 1.5rem;
+    }
+    .escenario{
+        width: 40rem;
+        height: 50rem;
+        border-radius: 1rem;
+    }
+}
+@include m.phone{
+    .lineup{
+        display: block;
+        flex-direction: row;
+        margin-top: 30rem;
+        h3{
+            text-align: center;
+        }
+    }
+    .dia{
+        text-align: center;
+        margin-top: 7rem;
+        margin-bottom: 1rem;
+    }
+    .calendario{
+        text-align: left;
+    }
+    .escenario{
+        width: 100%;
+        height: 45rem;
+        border-radius: 1rem;
+    }
+}

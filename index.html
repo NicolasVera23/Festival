@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival de Rock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            
+            <h1><span class="titulo_span">Galaxia</span> Distorsionada 
+                <br><span class="sub-titulo-spán">Festival de <span>Rock</span></span></h1>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Fotos</a>
+                <a href="#boletos">Boleteria</a>
+            </nav>
+        </div>
+    </header>
+    <div class="video">
+            <div class="contenido-video">
+                <h2>Rock & EDM Festival</h2>
+                <p>Marzo 2024, Cordoba, Argentina.</p>
+            </div>
+            <video autoplay muted loop >
+                <source src="video/pexels.mp4" type="video/mp4">
+                <source src="video/concierto.ogg" type="video/oog">
+                <source src="video/concierto.webm" type="video/webm">
+            </video>
+    </div>
+    <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <img src="src/img/imagen_vocalista.jpg" alt="Imagen vocalista festival">
+        </div>
+        <div class="contenido-festival">
+            <h2>Rock & EDM Festival</h2>
+            <p class="fecha">Marzo 2024, Cordoba, Argentina.</p>
+            <p class=" informacion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati expedita, magni iure ducimus quibusdam quod corporis ut dolorem ex sint assumenda aliquam. Repellat corporis possimus aperiam delectus animi autem?</p>
+        </div>
+    </section>
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+        <p class="dia">Viernes 22</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-rock">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>17:00 | <span>Kiss</span></li>
+                    <li>18:00 | <span>Ciro y los Persas</span></li>
+                    <li>19:00 | <span>Enanitos Verdes</span></li>
+                    <li>20:00 | <span>Usted Señálemelo</span></li>
+                    <li>22:00 | <span>Metalica</span></li>
+                    <li>23:00 | <span>The Rolling Stones</span></li>
+                    <li>00:00 | <span>Guns 'n Roses</span></li>
+                    <li>01:00 | <span>Guns 'n Roses</span></li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-edm">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>17:00 | <span>Avicii</span></li>
+                    <li>18:00 | <span>Calvin Harris</span></li>
+                    <li>19:00 | <span>Deadmau5</span></li>
+                    <li>20:00 | <span>Marshmello</span></li>
+                    <li>22:00 | <span>Zedd</span></li>
+                    <li>23:00 | <span>Martin Garrix</span></li>
+                    <li>00:00 | <span>Galantis</span></li>
+                    <li>01:00 | <span>Kygoto</span></li>    
+                </ul>
+            </div>
+        </div>
+        <p class="dia">Sabado 23</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-edm">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>17:00 | <span>Guns 'n Roses</span></li>
+                    <li>18:00 | <span>The Rolling Stones</span></li>
+                    <li>19:00 | <span>Usted Señálemelo</span></li>
+                    <li>20:00 | <span>AC/DC</span></li>
+                    <li>22:00 | <span>Queen</span></li>
+                    <li>23:00 | <span>Metalica</span></li>
+                    <li>00:00 | <span>U2</span></li>
+                    <li>01:00 | <span>Kiss</span></li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-rock">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>17:00 | <span>Armin van Buuren</span></li>
+                    <li>18:00 | <span>David Guetta</span></li>
+                    <li>19:00 | <span>Disclosure</span></li>
+                    <li>20:00 | <span>Flume</span></li>
+                    <li>22:00 | <span>The Chainsmokers</span></li>
+                    <li>23:00 | <span>Kygo</span></li>
+                    <li>00:00 | <span>Galantis</span></li>
+                    <li>01:00 | <span>Alesso</span></li>                    
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <section id="galeria" class="galeria ">
+        <h3>Galeria</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section>
+    <section id="boletos" class="boletos ">
+        <h3>Boletos</h3>
+        <div class="contenedor-boletos contenedor">
+            <div class="pase-1-dia">
+                <h4>Pase 1 Día</h4>
+                <p class="titulo">INCLUYE</p>
+                <ul class="ul-boletos">
+                    <li>Acceso a ambos escenarios</li>
+                    <li>Comidas y Bebidas</li>
+                </ul>
+                <p class="precio">$100.000</p>
+            </div>
+            <div class="pase-2-dias">
+                <h4>Pase 2 Días</h4>
+                <p class="titulo">INCLUYE</p>
+                <ul class="ul-boletos">
+                    <li>Acceso a ambos escenarios</li>
+                    <li>Comidas y Bebidas</li>
+                    <li>Acceso VIP</li>
+                    <li>Backstage</li>
+                </ul>
+                <p class="precio">$170.000</p>
+            </div>
+        </div>
+
+    </section>
+    <footer class="site-footer">
+        <p>Galaxia Distorsionada. Todos los derechos reservados</p>
+    </footer>
+    <script src="./src/js/app.js"></script>
+</body>
+</html>

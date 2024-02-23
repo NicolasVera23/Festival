@@ -1,0 +1,33 @@
+@use '../base/variables' as v;
+
+@mixin phone {
+    @media (max-width: 767px){
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: 992px){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: 992px){
+        @content;
+    }
+}
+@mixin desktopXL {
+    @media (min-width: 1200px){
+        @content;
+    }
+}
+@mixin grid( $padding, $num_colums, $gap){
+        padding: $padding 0;
+        display: grid;
+        grid-template-columns: repeat($num_colums, 1fr);
+        gap: $gap;
+}
+@mixin liDecoration {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}

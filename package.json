@@ -1,0 +1,19 @@
+{
+  "name": "seccion-12",
+  "version": "1.0.0",
+  "description": "Proyecto musica",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "tarea": "gulp primerTarea"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^5.0.0",
+    "sass": "^1.69.7"
+  }
+}
